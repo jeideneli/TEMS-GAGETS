@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="TEMS Phones and Accessories - Your Number One Phone Store for affordable UK used phones and accessories in Uganda">
+    <meta name="keywords" content="phones, mobile phones, used phones, UK phones, accessories, Uganda, Kampala">
+    <title>TEMS Phones and Accessories - Your Number One Phone Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.jpg" alt="TEMS Phone Logo" class="nav-logo-img">
+                    <div class="nav-logo-text">
+                        <h1>TEMS Phones</h1>
+                        <span class="subtitle">& Accessories</span>
+                    </div>
+                </div>
+                <div class="nav-contact">
+                    <a href="tel:+256773074155" class="contact-btn" aria-label="Call us at +256 773 074 155">
+                        <i class="fas fa-phone" aria-hidden="true"></i> Call: +256 773 074 155
+                    </a>
+                    <a href="https://wa.me/256773074155" class="contact-btn whatsapp" aria-label="Contact us on WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-content">
+            <h1>Your Number One Phone Store</h1>
+            <p>Affordable UK Used Phones & Accessories</p>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Grand Corner, Level 4, Shop 358B</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#phones" class="btn btn-primary">View Phones</a>
+                <a href="tel:+256773074155" class="btn btn-secondary">
+                    <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section" role="search" aria-label="Filter phones">
+        <div class="container">
+            <div class="filter-controls">
+                <select id="brandFilter" class="filter-select" aria-label="Filter by brand">
+                    <option value="">All Brands</option>
+                    <option value="Aquos">Aquos</option>
+                    <option value="Sony">Sony</option>
+                    <option value="Arrows">Arrows</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Sharp">Sharp</option>
+                    <option value="LG">LG</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Google">Google</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Infinix">Infinix</option>
+                    <option value="Tecno">Tecno</option>
+                    <option value="iPhone">iPhone</option>
+                </select>
+                <select id="priceFilter" class="filter-select" aria-label="Filter by price range">
+                    <option value="">All Prices</option>
+                    <option value="0-300">Under 300k</option>
+                    <option value="300-600">300k - 600k</option>
+                    <option value="600-1000">600k - 1M</option>
+                    <option value="1000-2000">1M - 2M</option>
+                    <option value="2000-5000">2M+</option>
+                </select>
+                <select id="conditionFilter" class="filter-select" aria-label="Filter by condition">
+                    <option value="">All Conditions</option>
+                    <option value="UK Used">UK Used</option>
+                    <option value="Boxed">Boxed</option>
+                </select>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search phones..." aria-label="Search phones by name or brand">
+            </div>
+        </div>
+    </section>
+
+    <!-- Phones Section -->
+    <main id="phones" class="phones-section" role="main">
+        <div class="container">
+            <h2>Available Phones</h2>
+            <div id="phonesGrid" class="phones-grid" role="grid" aria-label="Phone listings">
+                <!-- Phones will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section" role="region" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-content">
+                <h2 id="about-heading">About TEMS Phones</h2>
+                <p>We are your trusted source for affordable UK used phones and accessories. Located at Grand Corner, Level 4, Shop 358B, we offer a wide selection of quality phones at competitive prices.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        <h3>Quality Assured</h3>
+                        <p>All phones are thoroughly tested and in excellent condition</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tags" aria-hidden="true"></i>
+                        <h3>Best Prices</h3>
+                        <p>Competitive prices for all your phone needs</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                        <h3>Expert Support</h3>
+                        <p>Professional advice and after-sales support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" role="region" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Grand Corner, Level 4, Shop 358B</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+256773074155">+256 773 074 155</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/256773074155">+256 773 074 155</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal" role="dialog" aria-labelledby="order-modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <span class="modal-close" id="orderModalClose" aria-label="Close order form">&times;</span>
+            <h2 id="order-modal-title">Place Your Order</h2>
+            <form id="orderForm" action="https://formspree.io/f/xqablkjk" method="POST">
+                <input type="hidden" id="orderPhoneDetails" name="phone_details">
+                <div class="form-group">
+                    <label for="customerName">Your Name:</label>
+                    <input type="text" id="customerName" name="customer_name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Your Phone Number:</label>
+                    <input type="tel" id="customerPhone" name="customer_phone" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="orderMessage">Additional Message (optional):</label>
+                    <textarea id="orderMessage" name="message" rows="3" aria-describedby="message-help"></textarea>
+                    <div id="message-help" class="sr-only">Optional additional information about your order</div>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="order-whatsapp" aria-label="Order via WhatsApp">Order via WhatsApp</button>
+                    <button type="submit" class="order-online" id="orderOnlineBtn" aria-label="Submit order online">Order Online</button>
+                </div>
+            </form>
+            <div id="orderThankYou" style="display: none; text-align: center;">
+                <h3>Thank you for your order!</h3>
+                <p>We will get back to you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="phoneDetailsModal" class="modal" role="dialog" aria-labelledby="details-modal-title" aria-hidden="true">
+        <div class="modal-content details-modal-content">
+            <span class="modal-close" id="detailsModalClose" aria-label="Close phone details">&times;</span>
+            <div id="phoneDetailsContent">
+                <!-- Phone details will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 TEMS Phones and Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
