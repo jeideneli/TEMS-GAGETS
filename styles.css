@@ -1042,6 +1042,10 @@ body {
         font-size: 2rem;
         margin-top: 1rem;
     }
+    .details-image img {
+        max-height: 50vh;
+        object-fit: contain;
+    }
 }
 
 .modal-close {
@@ -1076,4 +1080,13 @@ body {
 
 .modal[style*="display: flex"] {
     display: flex !important;
+}
+
+html,
+body {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-y: auto !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
 }

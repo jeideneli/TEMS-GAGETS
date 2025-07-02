@@ -214,36 +214,35 @@ searchInput.addEventListener('input', filterPhones);
 
 // Enhanced mobile accessibility features
 function addMobileAccessibility() {
-    // Add touch support for better mobile interaction
-    let touchStartY = 0;
-    let touchEndY = 0;
-    let touchStartX = 0;
-    let touchEndX = 0;
+    // let touchStartY = 0;
+    // let touchEndY = 0;
+    // let touchStartX = 0;
+    // let touchEndX = 0;
 
-    document.addEventListener('touchstart', function(e) {
-        touchStartY = e.changedTouches[0].screenY;
-        touchStartX = e.changedTouches[0].screenX;
-    });
+    // document.addEventListener('touchstart', function(e) {
+    //     touchStartY = e.changedTouches[0].screenY;
+    //     touchStartX = e.changedTouches[0].screenX;
+    // });
 
-    document.addEventListener('touchend', function(e) {
-        touchEndY = e.changedTouches[0].screenY;
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
+    // document.addEventListener('touchend', function(e) {
+    //     touchEndY = e.changedTouches[0].screenY;
+    //     touchEndX = e.changedTouches[0].screenX;
+    //     handleSwipe();
+    // });
 
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        const diffY = touchStartY - touchEndY;
-        const diffX = touchStartX - touchEndX;
+    // function handleSwipe() {
+    //     const swipeThreshold = 50;
+    //     const diffY = touchStartY - touchEndY;
+    //     const diffX = touchStartX - touchEndX;
 
-        // Only handle vertical swipes to avoid interfering with horizontal scrolling
-        if (Math.abs(diffY) > swipeThreshold && Math.abs(diffY) > Math.abs(diffX)) {
-            if (diffY > 0) {
-                // Swipe up - scroll to top smoothly
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        }
-    }
+    //     // Only handle vertical swipes to avoid interfering with horizontal scrolling
+    //     if (Math.abs(diffY) > swipeThreshold && Math.abs(diffY) > Math.abs(diffX)) {
+    //         if (diffY > 0) {
+    //             // Swipe up - scroll to top smoothly
+    //             window.scrollTo({ top: 0, behavior: 'smooth' });
+    //         }
+    //     }
+    // }
 
     // Improve mobile scrolling performance
     let ticking = false;
