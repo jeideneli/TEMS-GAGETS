@@ -319,14 +319,14 @@ function addMobileAccessibility() {
     // Add mobile-specific improvements
     function addMobileImprovements() {
         // Prevent zoom on double tap for iOS
-        let lastTouchEnd = 0;
-        document.addEventListener('touchend', function(event) {
-            const now = (new Date()).getTime();
-            if (now - lastTouchEnd <= 300) {
-                event.preventDefault();
-            }
-            lastTouchEnd = now;
-        }, false);
+        // let lastTouchEnd = 0;
+        // document.addEventListener('touchend', function(event) {
+        //     const now = (new Date()).getTime();
+        //     if (now - lastTouchEnd <= 300) {
+        //         event.preventDefault();
+        //     }
+        //     lastTouchEnd = now;
+        // }, false);
 
         // Improve touch targets on mobile
         const touchTargets = document.querySelectorAll('button, a, input, select, textarea');
